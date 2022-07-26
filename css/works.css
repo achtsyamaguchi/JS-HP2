@@ -1,0 +1,270 @@
+@charset "utf-8";
+
+.works_top {
+  background-color: #ddca1e;
+}
+
+.section_top_visual {
+  background-image: url(../img/beekeeper.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  clip-path: polygon(0 11%,100% 11%,100% 80%,0% 90%);
+}
+
+
+.works_on_inner1 {
+  width: 92%;
+  display: flex;
+  gap: 2%;
+  margin: 0 auto;
+  margin-bottom: 7.6%;
+}
+
+.works_on_inner1_img {
+  width: 50%;
+}
+
+.works_on_inner1_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.works_inner1_txt {
+  width: 49%;
+  padding: 5.3% 4.03%;
+  text-align: center;
+  background-color: #fff;
+}
+
+.works_inner1_txt h2 {
+  display: inline-block;
+  font-size: clamp(2rem,1.7vw,2.5rem);
+  border-bottom: 2px solid #10602B;
+  padding-bottom: 3.53%;
+  margin-bottom: 5.23%;
+}
+
+.works_inner1_txt p {
+  font-size: clamp(1.6rem,1.4vw,2rem);
+  text-align: left;
+  line-height: 2;
+}
+
+/* -works-inner2------------------------------- */
+.works_on_inner2 {
+  width: 88.5%;
+  display: flex;
+  margin: 0 auto;
+  border-bottom: 2px solid #10602B;
+  padding-bottom: 7.6%;
+  margin-bottom: 7.6%;
+}
+.works_on_inner2_img {
+  width: 100%;
+  margin-bottom: 21%;
+}
+
+.works_on_inner2_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.works_inner2_txt {
+  background-color: #fff;
+  text-align: center;
+  padding: 14% 19.2%
+}
+.works_inner2_txt h2,
+.works_inner2_txt p {
+  font-size: clamp(1.6rem,1.4vw,2rem);
+  text-align: left;
+}
+
+.works_inner2_txt h2 {
+  display: inline-block;
+  margin-bottom: 13%;
+  border-bottom: 2px solid #10602B;
+}
+
+.works_inner2_item {
+  width: 33%;
+  margin-left: 7.4rem;
+}
+
+.works_inner2_item:first-child {
+  margin-left: 0;
+}
+
+
+/* works_inner3-------------------- */
+.works_inner3_item {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 7.6%;
+}
+
+.works_inner3_item_img {
+  width: 100%;
+  margin-bottom: 4.5%;
+}
+
+.works_inner3_item_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.works_inner3_item ul {
+  width: 100%;
+  padding: 4% 5.9%;
+  background-color: #fff;
+}
+
+.works_inner3_item ul li {
+  list-style:disc;
+  margin-left: 1.4rem;
+  list-style-position: inside;
+  line-height: 2;
+  font-size: clamp(1.6rem,1.4vw,2rem);
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .works_on_inner1 {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-bottom: unset;
+    margin-bottom: 9%;
+  }
+  
+  .works_on_inner1_img {
+    width: 100%;
+    margin-bottom: 11%;
+  }
+
+  .works_inner1_txt {
+    width: 100%;
+    padding: 6rem 5rem 6rem
+  }
+
+  .works_inner1_txt h2 {
+    /* margin-bottom: 6.6rem; */
+    padding-bottom: 1.3rem;
+    /* font-size: 3.5vw; */
+  }
+
+  .works_inner1_txt p {
+    /* font-size: 3vw; */
+    /* width: 88%; */
+  }
+
+  /* works-inner2---------------- */
+  .works_on_inner2 {
+    flex-direction: column;
+    padding-bottom: 3%;
+  }
+
+  .works_inner2_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: unset;
+    margin-bottom: 6%;
+  }
+
+  .works_on_inner2_img {
+    width: 38%;
+    margin-bottom: unset;
+    margin-right: 51px;
+  }
+
+  .works_on_inner2_img img {
+    width: 100%;
+  }
+
+  .works_inner2_txt {
+    padding: unset;
+    width: 47%;
+    padding: 4.2rem 4.7rem
+  }
+
+  .works_inner2_txt h2 {
+    /* font-size: 3vw; */
+  }
+
+  .works_inner2_txt p {
+    /* font-size: 2.8vw; */
+    line-height: 1.5;
+  }
+
+}
+
+
+
+@media screen and (max-width: 425px) {
+  .works_inner1_txt h2,
+  .works_inner1_txt p {
+    /* font-size: 1.8rem; */
+  }
+
+  .works_inner1_txt {
+    padding: 3.1rem 2.3rem;
+  }
+
+  .works_inner2_item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .works_on_inner1 {
+    margin-bottom: 5.6rem;
+  }
+
+  .works_on_inner2 {
+    margin-bottom: unset;
+    padding-bottom: unset;
+    margin-bottom: 5.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .works_inner2_item {
+    margin-bottom: unset;
+  }
+
+  .works_on_inner2_img {
+    width: 75.5%;
+    margin: unset;
+    margin-bottom: 2rem;
+  }
+
+  .works_inner2_txt {
+    width: 75.5%;
+    margin-bottom: 2rem;
+  }
+
+  .works_inner2_txt h2,
+  .works_inner2_txt p {
+    /* font-size: 1.8rem; */
+  }
+
+  .works_inner3_item ul li {
+    /* font-size: 1.8rem; */
+    margin-bottom: 2.5rem;
+    line-height: 1;
+    
+  }
+
+  .works_inner3_item ul {
+    padding: 2.8rem 1.5rem
+  }
+
+  
+}
+
+

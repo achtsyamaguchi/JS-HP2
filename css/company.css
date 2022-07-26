@@ -1,0 +1,116 @@
+
+
+.company_top {
+  background-color: #ce8e12;
+}
+.section_top_visual {
+  background-image: url(../img/bee-flower3-works.png);
+  background-position: center;
+}
+
+.company_info_wrapper {
+  background-color: #fff;
+}
+
+.company_info {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5.6%;
+}
+
+.company_info_txt {
+  font-size: clamp(1.6rem,1.7vw,2rem);
+  border: 1px solid #10602b;
+  width: 55.6%;
+  padding: 3.8% 7.9%;
+  line-height: 1.8;
+  margin-left: 5.9%;
+}
+
+.company_info_img {
+  width: 24.4%;
+}
+
+.name {
+  float: right;
+  font-weight: bold;
+}
+
+.section_works_img {
+  width: 100%;
+  height: 325px;
+}
+
+.section_works_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.company_info_list {
+  background-color: #f5efe5;
+}
+
+table {
+  width: 100%;
+  margin: 0 auto;
+  font-size: clamp(1.6rem,1.7vw,2.4rem);
+}
+
+
+th {
+  display: inline-block;
+  margin-bottom: 4.7rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 2px solid #10602b;
+}
+
+.last_th {
+  margin-bottom: 0;
+}
+
+td {
+  width: 50%;
+}
+
+.company_info_list_table {
+  border: 1px solid #10602b;
+  width: 72%;
+  padding: 16.4%;
+  margin: 0 auto;
+  margin-bottom: 7.6%;
+  background-color: #fff;
+}
+
+
+@media screen and (max-width: 425px) {
+  .company_info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .company_info_img {
+    width: 51.7%;
+    margin-bottom: 8.23%;
+  }
+
+  .company_info_txt {
+    width: 80.7%;
+    margin-left: 0;
+  }
+
+  .company_info_list_table {
+    width: 90%;
+  }
+  table {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .company_info_list_table {
+    padding: 9.3%;
+  }
+}

@@ -1,0 +1,254 @@
+
+.company_top {
+  background-color: #D3DCCA;
+}
+
+.section_top_visual {
+  background-image: url(../img/team-recuit.png);
+}
+
+.recruit_main {
+  position: relative;
+}
+
+.recruit_staff {
+  width: 100%;
+  background-image: url(../img/bg-color-recruit.jpg);
+  background-position: center;
+  padding: 2.9% 0;
+  text-align: center;
+  margin-bottom: 7.6%;
+  font-size: clamp(2rem,2.8vw,3rem);
+}
+
+.recruit_main_img {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.recruit_main_img img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 9.7%;
+}
+
+.staff_name {
+  width: 30%;
+  text-align: center;
+  font-size: clamp(2rem,2.0vw,2.5rem);
+  font-weight: bold;
+  border: 1px solid #10602b;
+  background-color: #fff;
+}
+
+.sub_txt {
+  font-size: clamp(1.6rem,1.4vw,2rem);
+  width: 40%;
+  margin-left: auto;
+  margin-bottom: 8.5%;
+  padding: 1rem 0;
+  background-color: #10602b;
+  color:#fff
+}
+
+.staff {
+  padding-bottom: 15%;
+}
+
+.staff_name {
+  position: absolute;
+  top: 40%;
+  left:36%;
+  transform: translate(-90%,-50%);
+}
+
+.sub_name {
+  margin-right: 2.0%
+}
+
+/* recruit-reason------------------------- */
+
+.recruit_reason {
+  position: relative;
+  margin-left: 4.86%;
+  margin-bottom: 7.6%;
+}
+
+.recruit_ttl {
+  width: 52%;
+  text-align: center;
+  margin-bottom: 2.7%;
+  font-size: clamp(1.6rem,2.8vw,3rem);
+  font-weight: bold;
+}
+
+.recruit_reason_txt {
+  width: 52%;
+  font-size: clamp(1.4rem,1.7vw,2rem);
+  line-height: 2;
+  padding: 4.6% 4%;
+  background-color: #fff;
+  border: 1px solid #10602b;
+}
+
+.recruit_reason_img {
+  position: absolute;
+  top: -2%;
+  left: 48%;
+  width: 48%;
+  z-index: -1;
+}
+
+.recruit_hope {
+  /* margin-top: 13.8%; */
+  margin-top: 15%
+}
+
+.recruit_hope_img {
+  width: 23%;
+}
+
+.recruit_hope_ttl {
+  width: 100%;
+}
+
+.recruit_hope_txt {
+  width: 54.5%;
+  margin-left: 3.5%;
+  padding: 2.9% 6.8%;
+  background-color: #fff;
+  border: 1px solid #10602b;
+}
+
+.recruit_hope_txt p {
+  line-height: 2;
+  font-size: clamp(1.4rem,1.7vw,2rem);
+}
+
+.recruit_hope_inner {
+  display: flex;
+  justify-content: center;
+}
+
+.recruit_info {
+  width: 78%;
+  padding: 5.5% 0;
+  padding-left: 12.5%;
+  margin: 0 auto;
+  margin-bottom: 7.6%;
+  background-color: #fff;
+  border: 1px solid #10602b;
+}
+
+.recruit_info table {
+  
+  font-size: clamp(1.6rem,2vw,2.5rem);
+  width: 100%;
+}
+
+th {
+  display: inline-block;
+  padding-bottom: 1rem;
+  margin-bottom: 16%;
+  border-bottom: 1px solid #10602b;
+}
+
+.last {
+  margin-bottom: 0;
+}
+
+
+@media screen and (max-width: 660px) {
+.section_ttl {
+  margin-bottom: 8.3%;
+}
+
+.recruit_staff {
+  margin-bottom: 8.3%;
+  margin-bottom: 3.5rem;
+}
+ .staff_name {
+  width: 90%;
+  position: static;
+  transform: translate(0);
+  margin-bottom: 3.5rem;
+  margin: 0 auto;
+}
+
+.recruit_reason_img {
+  position: static;
+  width: 90%;
+  margin: 0 auto;
+  /* margin-bottom: 3.5rem; */
+}
+
+.recruit_ttl {
+  margin: 3.4rem auto;
+}
+
+.recruit_reason_txt {
+  width: 90%;
+  margin: 0 auto;
+  /* padding: 4.6% 4%; */
+  padding: 6% 10%;
+  margin-bottom: 3.5rem;
+}
+
+.recruit_reason {
+  margin-left: 0;
+}
+
+.recruit_hope {
+  margin-top: 0;
+}
+
+.recruit_hope_inner {
+  flex-direction: column;
+}
+
+.recruit_hope_img {
+  width: 74%;
+  margin: 0 auto;
+  margin-bottom: 3.5rem;
+}
+
+.recruit_hope_txt {
+  width: 87.5%;
+  margin: 0 auto;
+  padding: 6% 10%;
+}
+table th,
+table td{
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+table th{
+  width: fit-content;
+}
+
+table td {
+  margin-bottom: 3.5rem;
+}
+
+.recruit_info {
+  padding: 0;
+  padding: 5rem 0;
+  padding-left: 4.5rem;
+}
+
+.last2 {
+  margin-bottom: 0;
+}
+}
+
+
+
+@media screen and (max-width: 375px) {
+  .section_ttl {
+    margin-bottom: 5.5rem;
+  }
+  
+}

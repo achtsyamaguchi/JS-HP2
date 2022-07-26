@@ -1,0 +1,574 @@
+@charset "utf-8";
+
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color:#10602b;
+  z-index: 300;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader .txt {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  display: none;
+}
+
+.top_visual {
+  position: relative;
+  display: flex;
+  margin-bottom: 7.6%;
+  color: #fff;
+  background-color: #fff;
+}
+
+.top_visual_txt h1 {
+  font-size: clamp(2.5rem,4vw,6rem);
+  margin-bottom: 6rem;
+}
+
+.top_visual_txt p {
+  font-size: clamp(1.6rem,2vw,3rem);
+  line-height: 1.5;
+}
+
+.top_visual_right1 {
+  background-image: url(../img/honey-top.jpg);
+  width: 100%;
+  height:100vh;
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.top_visual_right2 {
+  background-image: url(../img/honey-bottle.jpg);
+  width: 100%;
+  height:100vh;
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.top_visual_right3 {
+  background-image: url(../img/honey2-works.png);
+  width: 100%;
+  height:100vh;
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.top_visual_left {
+  width: 50%;
+  height: 100vh;
+  background-color: #e8a31f;
+  clip-path: polygon(0 0, calc(100% - 10vw)0,100% 100%,0 100%);
+}
+.top_wrapper {
+  width: 50%;
+}
+.top_visual_slide {
+  width: 100%;
+}
+
+.top_visual_txt {
+  position: absolute;
+  top: 50%;
+  left: 24%;
+  transform: translate(-50% ,-50%);
+  padding: 4%;
+  
+} 
+
+
+/* concept----- */
+#concept {
+  margin-bottom: 7.6%;
+}
+
+.concept_txt {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 17% 12%;
+}
+
+
+.concept_txt h2 {
+  font-size: clamp(2rem,2.2vw,2.5rem);
+  font-weight: bold;
+  margin-bottom: 15%;
+  border-bottom: 1px solid #10602b;
+}
+
+.concept_txt p {
+  font-size: clamp(1.6rem,1.8vw,2rem);
+  /* flex-grow: 1; */
+}
+
+.concept_img1 img,
+.concept_img2 img,
+.concept_img3 img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 5.5rem;
+}
+
+.concept_inner {
+  /* max-width: 1220px; */
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.concept_inner_box {
+  width: 29.5%;
+}
+
+
+
+/* works---------------------- */
+.works_inner {
+  width: 81%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.works_inner_box {
+  width: 28%;
+}
+
+.works_img img {
+  border-radius: 50%;
+  margin-bottom: 7.5rem;
+}
+
+.works_txt h2 {
+  font-size: clamp(2rem,2.1vw,2.5rem);
+  margin-bottom: 15%;
+  border-bottom: 1px solid #10602b;
+}
+
+.works_txt p {
+  font-size: clamp(1.6rem,1.8vw,2rem);
+}
+
+.works_txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 3.8rem 3rem;
+}
+
+.btn {
+  margin: 11rem auto;
+}
+
+/* company------------------- */
+.company_inner {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  height: 54.3vh;
+  margin: 0 auto;
+}
+
+.company_img {
+  background-image: url(../img/honey-bottle.jpg);
+  width: 100%;
+  height: 54.3vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.company_img::after {
+  position: absolute;
+  top: 4%;
+  left: 68%;
+  content: "";
+  width: 80%;
+  height: 80vh;
+  background-color: #fff;
+  transform: rotate(13deg);
+  z-index: 2;
+}
+
+.company_txt {
+  position: absolute;
+  top: 45%;
+  left: 70%;
+  z-index: 3;
+  text-align: center;
+}
+
+.company_txt h2 {
+  font-size:clamp(2rem,2.1vw,2.5rem);
+  display: inline-block;
+  border-bottom: 2px solid #10602b;
+  margin-bottom: 7.2rem;
+}
+
+.company_txt p {
+  font-size: clamp(1.5rem,1.2vw,1.8rem);
+  width: 70%;
+  display: inline-block;
+  text-align: left;
+}
+
+/* recruit--------------------- */
+.recruit_inner {
+  position: relative;
+  width: 92%;
+  margin: auto 5.5rem
+}
+
+.recruit_img {
+  width: 75.7%;
+  height: auto;
+}
+
+.recruit_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.recruit_txt {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  background-color: rgba(255, 254, 254, 0.8);
+  width: 60%;
+  padding: 5% 11.9%;
+}
+
+.recruit_txt h3 {
+  font-size: clamp(1.8rem,2.2vw,2.5rem);
+  font-weight: bold;
+  text-align: center;
+}
+
+.recruit_txt h2 {
+  font-size: clamp(2rem,2.5vw,2.5rem);
+  font-weight: bold;
+  width: fit-content;
+  margin: 3rem auto;
+  border-bottom: 5px solid #e8a31f;
+}
+
+.recruit_txt p {
+  font-size: clamp(1.6rem,1.8vw,2rem);
+}
+
+.btn_recruit {
+  margin-top: 21rem
+}
+
+
+@media screen and (max-width: 1024px) {
+  .top_visual_left,
+  .top_visual_right1,
+  .top_visual_right2,
+  .top_visual_right3 {
+    height: 70vh;
+  }
+}
+
+
+
+@media screen and (max-width: 886px) {
+  
+  .top_visual_left {
+    position: static;
+    display:none
+  }
+
+  .top_wrapper {
+    width: 100%;
+  }
+
+
+  .top_visual_txt {
+  background-color: rgb(180, 170, 170,0.6);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  }
+
+  .top_visual_txt h1 {
+    font-size: clamp(2rem,6.25vw,5rem);
+    margin-bottom: 4.5rem;
+    font-weight: bold;
+  }
+  .works_inner
+  .top_visual_txt p {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  
+  /* concept---------------------- */
+  .concept_inner {
+    display: block;
+    width: 86%;
+  }
+
+  .concept_inner_box {
+    display: flex;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .concept_txt {
+    padding:7% 8%;
+    width: 50%;
+    margin-left: 3.5rem;
+  }
+
+  .concept_img1,
+  .concept_img2,
+  .concept_img3 {
+    width: 50%;
+  }
+
+  .concept_img1 img,
+  .concept_img2 img,
+  .concept_img3 img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+  }
+
+  .concept_txt h2 {
+    border-bottom:1px solid #10602b;
+    margin-bottom: 4.3rem;
+    padding-bottom: 2.3rem;
+    /* font-size: 2.2rem; */
+  }
+
+  .concept_txt p {
+    /* font-size: 2rem; */
+  }
+
+  .section_ttl {
+    margin-bottom: 13%;
+    /* font-size: 3rem; */
+  }
+
+  /* works------------------ */
+  .works_inner {
+    display: block;
+    width: 91%;
+  }
+
+  .works_inner_box {
+    display: flex;
+    width: 100%;
+    margin-bottom: 4.5rem;
+  }
+
+  .works_img {
+    width: 50%;
+  }
+
+  .works_img img {
+    margin-bottom: 0;
+  }
+
+  .works_txt {
+    width: 50%;
+    margin-left: 6rem;
+    padding: 5.5% 8%
+  }
+
+  .works_txt h2 {
+    /* font-size: 2.2rem; */
+    margin-bottom: 4.2rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .works_txt p {
+    /* font-size: 2rem; */
+  }
+
+  .btn {
+    width: 33.7%;
+    padding: 2rem;
+  }
+
+  .company_inner {
+    width: 90%;
+  }
+
+  .company_img::after {
+    content: none;
+  }
+
+  .company_txt {
+    background-color: rgba(255, 255, 255, 0.72);
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .company_txt h2 {
+    padding-bottom: 1rem;
+    /* font-size: 2.2rem; */
+    font-weight: bold;
+    margin-top: 3.5%;
+    margin-bottom: 3.5%;
+  }
+
+  .company_txt p {
+    /* font-size: 2rem; */
+    width:40%;
+    margin-bottom: 3.1%;
+  }
+
+  .company_img {
+    width: 100%;
+    height: 60vh;
+  }
+
+  /* recruit------------ */
+  .recruit_txt {
+    position: static;
+    padding: 5rem 0;
+    width: 100%;
+    
+  }
+
+  .recruit_txt p{
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .recruit_txt h2 {
+    margin: 4rem auto;
+  }
+
+  .recruit_inner {
+    margin: unset;
+    width: 87%;
+    margin: 0 auto;
+  }
+
+  .recruit_img {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  .btn_recruit {
+    margin-top: unset;
+    margin-top: 14%;
+  }
+}
+
+
+
+@media screen and (max-width: 580px) {
+  .top_visual_txt {
+    top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+    /* top: 50%;
+    left: 36%; */
+  }
+
+  .section_ttl {
+    margin: 14.6% 0;
+  }
+
+  .concept_inner {
+    width: 74.6%;
+  }
+
+  .concept_inner_box {
+    display: block;
+  }
+
+  .concept_txt {
+    width: 100%;
+    margin: unset;
+    padding: 12% 17%;
+  }
+
+  .concept_img1,
+  .concept_img2,
+  .concept_img3 {
+    width: 100%;
+    margin-bottom: 9.3%;
+  }
+
+  .concept_txt h2 {
+    margin-bottom: 2.5rem;
+    padding: unset;
+    /* font-size: 1.8rem; */
+  }
+
+  .concept_txt p {
+    /* font-size: 1.8rem; */
+  }
+
+  .works_inner_box {
+    display: block;
+  }
+
+  .works_img {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 5.3%;
+  }
+
+  .works_txt {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10.5% 10.5%
+  }
+
+  .works_txt h2,
+  .works_txt p {
+    /* font-size: 1.8rem; */
+  }
+
+  .works_txt h2 {
+    padding: 0;
+    margin: unset;
+    margin-bottom: 12%;
+  }
+
+  .recruit_txt p {
+    width: 80%;
+  }
+
+  .btn {
+    margin: 5.5rem auto;
+    width: 48%;
+    /* padding: 3.2% 0; */
+  }
+
+  .company_txt h2 {
+    /* font-size: 2rem; */
+  }
+
+  .company_txt p {
+    /* font-size: 1.8rem; */
+  }
+}
+
+
+
+
+

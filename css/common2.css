@@ -1,0 +1,11 @@
+.section_top_visual {
+  background-image: url(../img/beekeeper.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  clip-path: polygon(0 11%,100% 11%,100% 80%,0% 90%);
+  /* clip-path: polygon(0 calc(100% - 60vw),100% calc(100% - 60vw),100% calc(100% - 15.8vw),0 calc(100% - 3vw)); */
+}
+
